@@ -1,0 +1,16 @@
+spring.application.name: rabbitmq
+
+rabbitmq:
+   connection:
+      username: guest
+      password: guest
+      host: localhost
+      port: 5672
+   queue:
+      user:
+         group1: "user.group1"
+         group2: "user.group2"
+      dead-letter: "DLQ"
+   exchange:
+      user: "user"
+      dead-letter: "DLX"
