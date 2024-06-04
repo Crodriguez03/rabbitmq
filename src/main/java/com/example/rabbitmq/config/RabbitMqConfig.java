@@ -41,11 +41,11 @@ public class RabbitMqConfig {
 	@Value("${rabbitmq.connection.password}")
 	public String password;
 
-	@Value("${rabbitmq.queue.user.group1}")
-	private String queueUserGroup1;
-
 	@Value("${rabbitmq.exchange.user}")
 	private String topicExchangeUser;
+	
+	@Value("${rabbitmq.queue.user.group1}")
+	private String queueUserGroup1;
 	
 	@Value("${rabbitmq.queue.user.group2}")
 	private String queueUserGroup2;
